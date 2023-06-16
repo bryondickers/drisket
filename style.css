@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+
+        --black:0 0% 0%;
+        --golden:30 40% 55%;
+        --blueish:0 0% 93%;
+        --white:30 44% 96%;
+    }
+    ::placeholder{
+        color: #636B78;
+        font-size: 15px;
+        
+    }
+    form::placeholder{
+        font-size: 1.0625rem;
+        color: #D0D0D0;
+        margin-block: auto;  
+    }
+    input[type="checkbox"]:checked{
+        background: red;
+    }
+}
+@layer components{
+
+    .swipers{
+        @apply h-[16px] w-[16px] border-[1px] border-goldenBrown
+    }
+    .items-heading{
+       @apply font-bold text-[30px] ml-4 my-4 leading-[39px]
+    }
+    .items-division{
+        @apply bg-white max-w-[280px] mb-3 w-[90%] rounded-[5px] p-4 text-[#3E424B]
+    }
+    .img-divi{
+        @apply w-full h-auto
+    }
+}
